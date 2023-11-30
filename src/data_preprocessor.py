@@ -2,7 +2,7 @@
 import re
 
 
-def clear_data(df):
+def preprocess_data(df):
     df["question"] = [elem.replace('Вопрос:', '') for elem in df["question"]]
     df["answer"] = [elem.replace('Резюме:', '') for elem in df["answer"]]
     df["answer"] = [elem.replace('Краткое описание:', '') for elem in df["answer"]]
