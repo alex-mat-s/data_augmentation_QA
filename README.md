@@ -49,7 +49,7 @@ MedQuAD_clean
 - Max output len: 128
 
 **Metrics on test**<br />
-*BLEU:* 0.14194473035391136
+*BLEU:* 0.14194473035391136<br />
 *RougeL:* 0.06521739130434782<br />
 
 **Loss**<br />
