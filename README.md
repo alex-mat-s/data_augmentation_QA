@@ -7,10 +7,10 @@ Compare different methods of data augmentation for the Q&A task
 ## QA models
 ### MedQAModel2 
 
-*Dataset*<br />
+**Dataset**<br />
 MedQuAD_Rus_clean
 
-*Parameters*
+**Parameters**
 - BATCH_SIZE: 4
 - Epochs: 91
 - Train set: 781
@@ -19,19 +19,19 @@ MedQuAD_Rus_clean
 - Max input len: 512
 - Max output len: 32
 
-*Metrics on test*<br />
+**Metrics on test**<br />
 
-**BLEU:** 0.08575324940726765<br />
-**RougeL:** 0.005295566502463054<br />
+*BLEU:* 0.08575324940726765<br />
+*RougeL:* 0.005295566502463054<br />
 
-*Example*<br />
+**Example**<br />
 ![MedQAModel2 example](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.png)
 
 ### MedQAModel3<br />
-*Dataset*<br />
+**Dataset**<br />
 MedQuAD_clean
 
-*Parameters*
+**Parameters**
 - BATCH_SIZE: 4
 - Epochs: 63
 - Train set: 872
@@ -40,23 +40,23 @@ MedQuAD_clean
 - Max input len: 512
 - Max output len: 128
 
-*Metrics on test*<br />
-**BLEU:** 0.14117568971024988<br />
-**RougeL:** 0.06521739130434782<br />
+**Metrics on test**<br />
+*BLEU:* 0.14117568971024988<br />
+*RougeL:* 0.06521739130434782<br />
 
-*Loss*
+**Loss**<br />
 ![MedQAModel3 loss](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.jpg)
-*Examples*
+<br />**Examples**<br />
 ![MedQAModel3 example1](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img2.png)
 ![MedQAModel3 example2](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img3.png)
 ![MedQAModel3 example3](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img4.png)
 ![MedQAModel3 example4](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img5.png)
 
 ### MedQAModel_aug_ans
-*Dataset*<br />
+**Dataset**<br />
 MedQuAD_answers_augmented_concat
 
-*Parameters*
+**Parameters**
 - BATCH_SIZE: 4
 - Epochs: 56
 - Train set: 1036
@@ -65,23 +65,23 @@ MedQuAD_answers_augmented_concat
 - Max input len: 512
 - Max output len: 128
 
-*Metrics on test*<br />
-**BLEU:** 0.2098802666579037<br />
-**RougeL:** 0.037037037037037035<br />
+**Metrics on test**<br />
+*BLEU:* 0.2098802666579037<br />
+*RougeL:* 0.037037037037037035<br />
 
-*Loss*
+**Loss**<br />
 ![MedQAModel_aug_ans loss](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img6.png)
-*Examples*
+<br />**Examples**<br />
 ![MedQAModel_aug_ans example1](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img7.png)
 ![MedQAModel_aug_ans example2](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img8.png)
 ![MedQAModel_aug_ans example3](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img9.png)
 ![MedQAModel_aug_ans example4](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img10.png)
 
 ### MedQAModel_generated
-*Dataset*<br />
+**Dataset**<br />
 MedQuAD_answers_augmented_concat
 
-*Parameters*
+**Parameters**
 - BATCH_SIZE: 4
 - Epochs: 22
 - Train set: 5021
@@ -90,13 +90,13 @@ MedQuAD_answers_augmented_concat
 - Max input len: 512
 - Max output len: 128
 
-*Metrics on test*<br />
-**BLEU:** 0.6652164170527515<br />
-**RougeL:** 0.054325089208810136<br />
+**Metrics on test**<br />
+*BLEU:* 0.6652164170527515<br />
+*RougeL:* 0.054325089208810136<br />
 
-*Loss*
+**Loss**<br />
 ![MedQAModel_generated loss](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img11.png)
-*Examples*
+<br />**Examples**<br />
 ![MedQAModel_generated example1](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img12.png)
 ![MedQAModel_generated example2](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img13.png)
 ![MedQAModel_generated example3](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img14.png)
