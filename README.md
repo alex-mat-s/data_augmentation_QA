@@ -5,10 +5,10 @@ ITMO'23 ANLP Course Project
 Compare different methods of data augmentation for the Q&A task
 
 ## Team
-[Igor Chernov](https://link-url-here.org): Fine-tuning Q&A
-[Alexandra Matveeva](https://github.com/alex-mat-s): ruT5-base Fine-Tuning for Q&A
-Dariya Murova: data parsing, data augmentation
-[Alexander Semiletov](https://github.com/kinoooshnik): data augmentation
+[Igor Chernov](https://link-url-here.org): Fine-tuning Q&A<br />
+[Alexandra Matveeva](https://github.com/alex-mat-s): ruT5-base Fine-Tuning for Q&A<br />
+Dariya Murova: data parsing, data augmentation<br />
+[Alexander Semiletov](https://github.com/kinoooshnik): data augmentation<br />
 
 ## QA models
 
