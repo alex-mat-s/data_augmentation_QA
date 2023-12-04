@@ -7,7 +7,7 @@ Compare different methods of data augmentation for the Q&A task
 ## QA models
 ### MedQAModel2 
 
-*Dataset*\n
+*Dataset*<br />
 MedQuAD_Rus_clean
 
 *Parameters*
@@ -19,13 +19,13 @@ MedQuAD_Rus_clean
 - Max input len: 512
 - Max output len: 32
 
-*Metrics on test*
+*Metrics on test*<br />
 
-**BLEU** 0.08575324940726765\n
-**RougeL** 0.005295566502463054
+**BLEU** 0.08575324940726765<br />
+**RougeL** 0.005295566502463054<br />
 
-*Example*\n
-[![MedQAModel2 example]([https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img1.png?raw=true)](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.png)](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.png)
+*Example*<br />
+[![MedQAModel2 example](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.png)
 
 *MedQAModel3*
 Dataset: MedQuAD_clean
