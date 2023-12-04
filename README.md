@@ -21,7 +21,7 @@ RougeL: 0.005295566502463054
 Example
 ![MedQAModel2 example](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img1.png?raw=true)
 
-*MedQAModel3*
+*MedQAModel4*
 Dataset: MedQuAD_clean
 Parameters:
 - BATCH_SIZE: 4
@@ -32,12 +32,12 @@ Parameters:
 - Max input len: 512
 - Max output len: 128
 Metrics on test:
-BLEU: 0.14117568971024988
+BLEU: 0.14194473035391136
 RougeL: 0.06521739130434782
 Loss
-![MedQAModel3 loss](https://https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img1.jpg?raw=true)
+![MedQAModel4 loss](https://https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img15.jpg?raw=true)
 Examples
-![MedQAModel3 example1](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img2.jpg?raw=true)
+![MedQAModel3 example1](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img16.jpg?raw=true)
 ![MedQAModel3 example2](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img3.jpg?raw=true)
 ![MedQAModel3 example3](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img4.jpg?raw=true)
 ![MedQAModel3 example4](https://github.com/alex-mat-s/data_augmentation_QA/img/blob/main/img5.jpg?raw=true)
