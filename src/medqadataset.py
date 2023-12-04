@@ -18,7 +18,7 @@ class MedQADataset(Dataset):
         question = f"Вопрос: {self.questions[idx]}"
         context = f"Контекст: {self.context[idx]}"
         answer = f"Ответ: {self.answer[idx]}"
-
+        
         question_tokenized = self.tokenizer(
             question,
             context,
