@@ -4,8 +4,16 @@ ITMO'23 ANLP Course Project
 ## Main goal:
 Compare different methods of data augmentation for the Q&A task
 
+## Team
+[Igor Chernov](https://link-url-here.org): Fine-tuning Q&A
+[Alexandra Matveeva](https://github.com/alex-mat-s): ruT5-base Fine-Tuning for Q&A
+Dariya Murova: data parsing, data augmentation
+[Alexander Semiletov](https://github.com/kinoooshnik): data augmentation
+
 ## QA models
-### MedQAModel2 
+
+### ruT5-base
+#### MedQAModel2 
 
 **Dataset**<br />
 MedQuAD_Rus_clean
@@ -27,7 +35,7 @@ MedQuAD_Rus_clean
 **Example**<br />
 ![MedQAModel2 example](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img1.png)
 
-### MedQAModel3<br />
+#### MedQAModel3<br />
 **Dataset**<br />
 MedQuAD_clean
 
@@ -52,7 +60,7 @@ MedQuAD_clean
 ![MedQAModel3 example3](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img4.png)
 ![MedQAModel3 example4](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img5.png)
 
-### MedQAModel_aug_ans
+#### MedQAModel_aug_ans
 **Dataset**<br />
 MedQuAD_answers_augmented_concat
 
@@ -77,7 +85,7 @@ MedQuAD_answers_augmented_concat
 ![MedQAModel_aug_ans example3](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img9.png)
 ![MedQAModel_aug_ans example4](https://github.com/alex-mat-s/data_augmentation_QA/blob/main/img/img10.png)
 
-### MedQAModel_generated
+#### MedQAModel_generated
 **Dataset**<br />
 MedQuAD_answers_augmented_concat
 
