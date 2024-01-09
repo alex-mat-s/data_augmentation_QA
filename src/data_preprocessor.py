@@ -26,9 +26,13 @@ def preprocess_data(df):
         df[col] = [elem.replace('falco:', '') for elem in df[col]]
         df[col] = [elem.replace('описание', '') for elem in df[col]]
 
-        df[col] = [re.sub('[-–—\n\t\(\)\[\]]', '', elem) for elem in df[col]]
+        #df[col] = [re.sub('[-–—\n\t\(\)\[\]]', '', elem) for elem in df[col]]
+        df[col] = [re.sub('[\n\t]', '', elem) for elem in df[col]]
         df[col] = [re.sub(' +', ' ', elem) for elem in df[col]]
         
+    # Remove exrtra inforamtion from questions
+    # Remove extra information from the answer
+    df.question = [f"{question.split('?')[0]}?" for question in df.question]
     
     return df
 

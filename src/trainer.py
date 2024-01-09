@@ -2,11 +2,12 @@ from tqdm import tqdm
 import torch
 import locale
 locale.getpreferredencoding = lambda: "UTF-8"
-from rouge_score import rouge_scorer
+#from rouge_score import rouge_scorer
 import evaluate
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from rouge import Rouge
 import seaborn as sns
 sns.set_style("whitegrid")
 
@@ -125,7 +126,7 @@ class Trainer():
         input_ids = torch.tensor(inputs["input_ids"], dtype=torch.long).to(self.device).unsqueeze(0)
         attention_mask = torch.tensor(inputs["attention_mask"], dtype=torch.long).to(self.device).unsqueeze(0)
 
-        outputs = self.model.generate(input_ids=input_ids, attention_mask=attention_mask)
+        outputs = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, max_length=128)
 
         predicted_answer = self.tokenizer.decode(outputs.flatten(), skip_special_tokens=True)   
         predicted_answer = predicted_answer.replace("<extra_id_0>", "")
@@ -141,16 +142,17 @@ class Trainer():
                 return_tensors="pt"
             )
 
-            labels = answer_encoding["input_ids"]
-            labels = self.tokenizer.decode(labels.flatten(), skip_special_tokens=True)
+            labels_embed = answer_encoding["input_ids"]
+            labels = self.tokenizer.decode(labels_embed.flatten(), skip_special_tokens=True)
 
             # Load the Bleu metric
             bleu = evaluate.load("google_bleu")
             score = bleu.compute(predictions=[predicted_answer],
                                 references=[labels])
+            
             # Load Rouge metric
-            scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
-            score_rouge = scorer.score(predicted_answer, labels)
+            rouge = Rouge()
+            scores = rouge.get_scores(predicted_answer, labels)
 
             if print_text:
                 print(context)
@@ -161,7 +163,7 @@ class Trainer():
                 "Reference Answer: ": labels,
                 "Predicted Answer: ": predicted_answer,
                 "BLEU Score: ": score,
-                "RougeL (precision): ": score_rouge["rougeL"][0]
+                "RougeL (precision): ": scores[0]["rouge-l"]["p"]
             }
         else:
             return predicted_answer
